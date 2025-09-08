@@ -73,4 +73,17 @@ button {
   list-style: none;
 }
 
+.navbar ul li::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px; /* adjust distance from text */
+  background: lightskyblue;
+  transition: width 0.8s;
+}
 
+.navbar ul li:hover::after {
+  width: 100%;
+}
