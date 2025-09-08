@@ -8,8 +8,12 @@
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
                     url("https://grist.org/wp-content/uploads/2013/10/shutterstock_118021813.jpg?quality=75&strip=all");
-                    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;                
 }
+/* navbar */
 .navbar{
     width: 85%;
     margin: auto;
@@ -19,12 +23,13 @@
     justify-content: space-between;
 
 }
-}
+/* logo styling */
 .logo {
     width: 60px;
     cursor: pointer;
     border-radius: 100%;
 }
+/* navbar links */
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -35,23 +40,28 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    font-weight: 500;
+    transition: color o.5s;
 }
+/* banner content */
 .content {
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50);
+    transform: translateY(-50%);
     text-align: center;
     color: white;
 
 }
 .content h1 {
-    font-size: 40px;
-    margin-bottom: 80px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 .content p {
     margin: 20px auto;
-    font-weight: 100px;
+    font-weight: 300;
     line-height: 25px;
 }
 
@@ -61,11 +71,14 @@ button {
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
+    border: none;
     border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
     border: 2px solid lightskyblue;
-    color: red;
+    color: white;
+    background: linear-gradient(90deg, lightskyblue, deepskyblue);
+    transition: 0.3s;
 }
 /* style by adding the hover effect */
 .navbar ul li {
